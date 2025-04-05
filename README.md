@@ -1,4 +1,4 @@
-### This repo automates the medusa deployment on AWS ECS Fargate
+### This repository automates the medusa deployment on AWS ECS Fargate
 
 ## Requirements
 
