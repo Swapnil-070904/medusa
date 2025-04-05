@@ -1,0 +1,9 @@
+node_modules
+.medusa
+npm-debug.log
+.vscode
+.env
+.env.template
+terraform/.*
+terraform/terraform.*
+terraform/vars.auto.tfvars
