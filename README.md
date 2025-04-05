@@ -1,3 +1,5 @@
+### This repo automates the medusa deployment on AWS ECS Fargate
+
 ## Requirements
 
 | Name | Version |
@@ -34,11 +36,11 @@
 
 | Name | Description | Type | Default | Required |
 |------|-------------|------|---------|:--------:|
-| <a name="input_aws_region"></a> [aws\_region](#input\_aws\_region) | n/a | `string` | `"ap-south-1"` | no |
+| <a name="input_aws_region"></a> [aws\_region](#input\_aws\_region) | aws region | `string` | `"ap-south-1"` | yes |
 | <a name="input_cookie_secret_arn"></a> [cookie\_secret\_arn](#input\_cookie\_secret\_arn) | ARN of the SSM parameter containing the cookie secret | `any` | n/a | yes |
-| <a name="input_db_password"></a> [db\_password](#input\_db\_password) | n/a | `any` | n/a | yes |
+| <a name="input_db_password"></a> [db\_password](#input\_db\_password) | db password | `any` | n/a | yes |
 | <a name="input_db_username"></a> [db\_username](#input\_db\_username) | Username for the database | `any` | n/a | yes |
 | <a name="input_ecs_exec_role_arn"></a> [ecs\_exec\_role\_arn](#input\_ecs\_exec\_role\_arn) | value of the ECS execution role ARN | `any` | n/a | yes |
 | <a name="input_image_url"></a> [image\_url](#input\_image\_url) | URL of the container image in ECR | `any` | n/a | yes |
 | <a name="input_jwt_secret_arn"></a> [jwt\_secret\_arn](#input\_jwt\_secret\_arn) | ARN of the SSM parameter containing the JWT secret | `any` | n/a | yes |
-| <a name="input_vpc_cidr"></a> [vpc\_cidr](#input\_vpc\_cidr) | n/a | `string` | `"10.0.0.0/16"` | no |
+| <a name="input_vpc_cidr"></a> [vpc\_cidr](#input\_vpc\_cidr) | cidr for vpc | `string` | `"10.0.0.0/16"` | yes |
